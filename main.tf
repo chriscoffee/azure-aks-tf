@@ -14,7 +14,7 @@ resource "azurerm_kubernetes_cluster" "aks_kc" {
     admin_username = "${var.admin_credentials["username"]}"
 
     ssh_key {
-      key_data = "${file("${path.module}/.ssh/id_rsa.pub")}"
+      key_data = "${var.admin_credentials["ssh_key"]}"
     }
   }
 
