@@ -1,6 +1,6 @@
 variable "resource_group" {
   description = "Specifies the resource group where the resource exists. Changing this forces a new resource to be created."
-  type = "map"
+  type        = "map"
 }
 
 variable "location" {
@@ -9,7 +9,7 @@ variable "location" {
 
 variable "kubernetes_cluster" {
   description = "The map for the configuration of the kubernetes cluster"
-  type = "map"
+  type        = "map"
   /*
     default = {
       name = ""
@@ -25,7 +25,7 @@ variable "admin_credentials" {
 
 variable "agent_pool_profile" {
   description = "The map for the configuration of the kubernetes cluster"
-  type = "map"
+  type        = "map"
   /*
     default = {
       name = "" # Unique name of the Agent Pool Profile in the context of the Subscription and Resource Group.
